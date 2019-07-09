@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Juice Premier</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/callback.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/trainers.css">
+
+</head>
+
+<body>
+    <div class="container" id="preloader">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+    
+    <div class="tabs">
+        <img src="images/RPFxyjgFnQ8.jpg" alt="logo">
+
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1" title="Вкладка 1">Новости и акции</label>
+
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2" title="Вкладка 2">Запись на занятия</label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3" title="Вкладка 3">О клубе</label>
+
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4" title="Вкладка 4">Групповые программы</label>
+
+        <input id="tab5" type="radio" name="tabs">
+        <label for="tab5" title="Вкладка 5">Тренеры</label>
+
+        <input id="tab6" type="radio" name="tabs">
+        <label for="tab6" title="Вкладка 6">Отзывы</label>
+
+        <section id="content-tab1">
+
+        </section>
+
+        <section id="content-tab2">
+            <table id="CycleAndMassageTable">
+                <tr>
+                    <th> </th>
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                    <th>Сб</th>
+                </tr>
+            </table>
+        </section>
+
+        <section id="content-tab3">
+
+        </section>
+
+        <section id="content-tab4">
+
+        </section>
+
+        <section class="post-wrap-t" id="content-tab5">
+
+        </section>
+
+    </div>
+
+    <!-- Dependencies -->
+    <script src="./node_modules/react/umd/react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+
+    <!-- Main -->
+    <script src="./dist/main.js"></script>
+
+    <script>
+      document.getElementById('preloader').parentNode.removeChild(document.getElementById('preloader'));
+    </script>
+
+    <!--Vk-->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?161"></script>
+
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+        VK.Widgets.CommunityMessages("vk_community_messages", 179736372, { expanded: "1", tooltipButtonText: "Есть вопрос?" });
+    </script>
+
+    
+
+</body>
+
+</html>
